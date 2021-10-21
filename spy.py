@@ -14,7 +14,7 @@ BOT_TOKEN = "2052533251:AAHwr69L6ZLymQLoBIQ1FRcRmlrwjlleoMI"
 USER_NAME = "ontrabot"
 SESSION = "1BVtsOL0Buws2C1KfOr_GKPJiezXVMPgc2nCOjx75vr8fj5mUm_X8werx8-RMFTfuZ4hX7RGkghx-U2dqRUM2WsqGYQBYphXgfa88tW37cVsW201i_z5nifoLUdxHIn5dB6qoZzUcatf73fZLSQpDK7qu5iSNF6qbMnfGl5wJ5RUkp8gfwxguXVKMfKxAIjmiBQYifBqnNVLmEjUPgxTEqjQ3zDiGgaCin0P1xZg1u3H8m7Kf74nZ0pXoL5Jhpoj8CLEGWvUVtfLr-63aJux-YA5YXyI4LRJoUcFieJeQVp9SklmeK5cTYj5VdG2qBhdUeDXKF4cwpJdMb-wg46Uqe7YTPKKX_k8="
 
-client = TelegramClient('data_thief', API_ID, API_HASH)
+client = TelegramClient(StringSession(SESSION), API_ID, API_HASH)
 
 client.connect()
 client.start()
