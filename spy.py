@@ -1,6 +1,7 @@
 from datetime import datetime, timedelta
 from sys import argv, exit
 from telethon import TelegramClient, events, connection
+from telethon.sessions import StringSession
 from telethon.tl.types import UserStatusRecently, UserStatusEmpty, UserStatusOnline, UserStatusOffline, PeerUser, PeerChat, PeerChannel
 from time import mktime, sleep
 import telethon.sync
