@@ -264,7 +264,7 @@ async def getAll(event):
     for key, value in data.items():
         response += f'{key}:\n'
         for j, i in value.items():
-            if (isinstance(i, collections.Sequence)):
+            if (isinstance(i, collections.abc.Sequence)):
                 response += f'{j}: ' + '\n'.join([str(x) for x in i]) + '\n'
             else:
                 response += f'{j}: {i}\n'
